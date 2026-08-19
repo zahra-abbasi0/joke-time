@@ -1,3 +1,3 @@
-#joke-time
+# Joke Time
 
-A fun and simple web app that displays random jokes
+A fun and simple web app that displays random jokes.
