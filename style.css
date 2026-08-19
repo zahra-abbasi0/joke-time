@@ -142,6 +142,7 @@ body {
   width: 1px;
   height: 20px;
   background: #D9D6EE;
+  cursor: pointer;
 }
 
 /* Stats bar */
@@ -150,6 +151,7 @@ body {
   background: #EAE6FA;
   border-radius: 20px;
   padding: 24px 32px;
+  cursor: pointer;
 }
 
 .emoji-circle {
@@ -158,6 +160,7 @@ body {
   border-radius: 50%;
   background: #fff;
   font-size: 26px;
+  cursor: pointer;
 }
 
 .stats-brand h3 {
@@ -207,6 +210,7 @@ body {
   width: 56px;
   height: 56px;
   box-shadow: 0 6px 18px rgba(30, 27, 75, 0.08);
+  cursor: pointer;
 }
 
 /* Footer */
@@ -238,4 +242,25 @@ body {
 @media (max-width: 640px) {
   .hero-title { font-size: 34px; }
   .joke-card { padding: 34px 22px; }
+}
+
+.laughing-emoji {
+    position: fixed;
+    font-size: 28px;
+    pointer-events: none;
+    z-index: 9999;
+
+    animation: emoji-fall 1.5s ease-in forwards;
+}
+
+@keyframes emoji-fall {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(var(--fall));
+        opacity: 0;
+    }
 }
