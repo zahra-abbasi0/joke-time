@@ -1,0 +1,241 @@
+:root {
+  --purple: #6C4CE0;
+  --purple-dark: #1E1B4B;
+  --bg-page: #F1EFFB;
+  --text-muted: #6B7280;
+  --footer-bg: #211C4E;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: var(--bg-page);
+  color: var(--purple-dark);
+}
+
+/* Header */
+.site-header {
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+  padding: 18px 0;
+}
+
+.brand .logo-emoji {
+  font-size: 32px;
+}
+
+.brand h1 {
+  font-size: 22px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.brand p {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.how-it-works-btn {
+  border: 1px solid #E2E0F5;
+  border-radius: 999px;
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--purple-dark);
+  background: #fff;
+}
+
+/* Hero */
+.hero-title {
+  font-size: 52px;
+  font-weight: 800;
+  color: var(--purple-dark);
+}
+
+.hero-subtitle {
+  font-size: 18px;
+  color: var(--text-muted);
+}
+
+.divider-line {
+  width: 60px;
+  height: 3px;
+  background: var(--purple);
+  border-radius: 2px;
+}
+
+.divider-star {
+  color: var(--purple);
+  font-size: 18px;
+}
+
+/* Joke card */
+.joke-card {
+  max-width: 720px;
+  background: #fff;
+  border-radius: 24px;
+  padding: 50px 40px;
+  box-shadow: 0 10px 40px rgba(30, 27, 75, 0.08);
+}
+
+.quote-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #EFEAFE;
+  color: var(--purple);
+  font-size: 28px;
+  font-weight: 800;
+}
+
+#joke-setup {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--purple-dark);
+}
+
+#joke-punchline {
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--purple);
+}
+
+.joke-divider {
+  height: 1px;
+  background: #ECEAF6;
+}
+
+#joke-category {
+  font-weight: 600;
+  color: var(--purple);
+  font-size: 16px;
+}
+
+/* Buttons */
+#get-joke-btn {
+  background: var(--purple);
+  color: #fff;
+  border: none;
+  border-radius: 14px;
+  padding: 18px 36px;
+  font-size: 17px;
+  font-weight: 700;
+  box-shadow: 0 10px 24px rgba(108, 76, 224, 0.35);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+#get-joke-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(108, 76, 224, 0.4);
+  color: #fff;
+}
+
+.action-row button {
+  background: none;
+  border: none;
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--purple);
+}
+
+.action-divider {
+  width: 1px;
+  height: 20px;
+  background: #D9D6EE;
+}
+
+/* Stats bar */
+.stats-bar {
+  max-width: 900px;
+  background: #EAE6FA;
+  border-radius: 20px;
+  padding: 24px 32px;
+}
+
+.emoji-circle {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #fff;
+  font-size: 26px;
+}
+
+.stats-brand h3 {
+  font-size: 18px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.stats-brand p {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.stat-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #fff;
+  font-size: 20px;
+  color: var(--purple);
+}
+
+.stat-number {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--purple-dark);
+}
+
+.stat-label {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.stat-sep {
+  width: 1px;
+  height: 34px;
+  background: #D9D6EE;
+}
+
+/* Floating decorative emojis */
+.floating-emoji {
+  position: absolute;
+  font-size: 22px;
+  background: #fff;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  box-shadow: 0 6px 18px rgba(30, 27, 75, 0.08);
+}
+
+/* Footer */
+.site-footer {
+  background: var(--footer-bg);
+  color: #fff;
+  padding: 30px 0;
+}
+
+.site-footer p {
+  color: #C9C5EA;
+  margin: 0;
+}
+
+.site-footer .copyright {
+  font-size: 14px;
+}
+
+.social-icons a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+@media (max-width: 640px) {
+  .hero-title { font-size: 34px; }
+  .joke-card { padding: 34px 22px; }
+}
